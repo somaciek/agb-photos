@@ -2,6 +2,8 @@ import { createTables } from '@/db/schema';
 import { neon } from '@neondatabase/serverless';
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   try {
     await createTables();
